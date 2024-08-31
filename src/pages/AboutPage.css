@@ -1,0 +1,101 @@
+/* src/pages/AboutPage.css */
+
+.about-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 120px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .about-title {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .company-overview,
+  .ceo-section,
+  .team-section,
+  .mission-section,
+  .history-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .section-title {
+    font-size: 2em;
+    color: #007BFF;
+    margin-bottom: 15px;
+  }
+  
+  .about-description,
+  .mission-description,
+  .history-description {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .profile-card {
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .profile-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .profile-picture {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .profile-info {
+    padding: 15px;
+  }
+  
+  .profile-info h3 {
+    margin: 10px 0 5px;
+    font-size: 1.3em;
+    color: #333;
+  }
+  
+  .profile-info p {
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .team-profiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .mission-section,
+  .history-section {
+    background: #e9ecef;
+  }
+  
+  .mission-section:hover,
+  .history-section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }

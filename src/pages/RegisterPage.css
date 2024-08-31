@@ -1,0 +1,153 @@
+/* Main container for the register page */
+.register-container {
+    position: relative; /* Position relative for floating effect */
+    max-width: 450px; /* Maximum width to ensure the form isn't too wide */
+    margin: 10vh auto; /* Center vertically and horizontally */
+    padding: 50px 40px; /* Increased padding for spacious design */
+    background: linear-gradient(
+        to bottom right,
+        rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 0.5)
+      ); /* Subtle gradient for a modern glass effect */
+    backdrop-filter: blur(15px); /* More blur for the floating glass look */
+    border-radius: 20px; /* More rounded corners for a soft, modern feel */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+    animation: float 2.5s ease-in-out infinite; /* Smooth floating animation */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+    overflow: hidden; /* Hide overflow for smooth rounded edges */
+  }
+  
+  /* Floating animation */
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  /* Hover effect for interactive UI */
+  .register-container:hover {
+    transform: scale(1.07); /* Slight scale up on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.1); /* Enhance shadow on hover */
+  }
+  
+  /* Header style */
+  h2 {
+    text-align: center;
+    color: #444; /* Slightly darker text for better contrast */
+    margin-bottom: 30px; /* Increased margin for spacing */
+    font-weight: 900; /* Bold font for prominence */
+    font-size: 2.5rem; /* Larger font size for a striking look */
+    letter-spacing: 1.5px; /* More letter spacing for a modern feel */
+    text-transform: uppercase; /* Uppercase for strong emphasis */
+  }
+  
+  /* Form styling */
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Increased gap for more spacing */
+  }
+  
+  /* Input field styling */
+  .form-control {
+    padding: 18px; /* More padding for larger clickable area */
+    font-size: 1rem; /* Standardized font size */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Transparent border for glass effect */
+    border-radius: 10px; /* Rounded corners */
+    transition: border-color 0.3s, background-color 0.3s, box-shadow 0.3s; /* Smooth transition for interactivity */
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background for modern look */
+    color: #333; /* Darker text for better readability */
+  }
+  
+  /* Input focus state */
+  .form-control:focus {
+    border-color: #1a73e8; /* Blue border on focus */
+    background-color: #ffffff; /* White background on focus for clarity */
+    box-shadow: 0 0 8px rgba(26, 115, 232, 0.5); /* Soft blue glow on focus */
+    outline: none; /* Remove default outline */
+    transform: translateY(-2px); /* Slight lift on focus */
+  }
+  
+  /* Button styling */
+  .btn-primary {
+    background: linear-gradient(
+      to right,
+      #1a73e8,
+      #4a90e2
+    ); /* Gradient background for vibrant button */
+    color: #ffffff; /* White text */
+    padding: 18px; /* Larger padding for more prominent button */
+    border: none;
+    border-radius: 10px; /* Rounded corners */
+    font-size: 1.1rem; /* Standardized font size */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+    text-transform: uppercase; /* Uppercase for strong emphasis */
+  }
+  
+  /* Button hover state */
+  .btn-primary:hover {
+    background: linear-gradient(
+      to right,
+      #155ab5,
+      #2b80d3
+    ); /* Darker gradient on hover */
+    transform: translateY(-4px); /* More pronounced lift on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Extra shadow on hover */
+  }
+  
+  /* Alert styling for error and success messages */
+  .alert {
+    margin-top: 20px; /* Space above alerts */
+    border-radius: 8px; /* More rounded corners for alerts */
+    padding: 15px 25px; /* Padding inside alerts */
+    font-size: 0.95rem; /* Slightly smaller font size */
+    background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent background for modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+  
+  /* Spinner styling for loading indicator */
+  .spinner-border {
+    margin-right: 12px; /* Increased margin for better spacing with text */
+    vertical-align: middle; /* Align spinner with text */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .register-container {
+      padding: 40px 30px; /* Adjust padding for smaller screens */
+      margin: 15vh auto; /* Adjust vertical margin */
+    }
+  
+    h2 {
+      font-size: 2rem; /* Adjust header font size */
+    }
+  
+    .btn-primary {
+      padding: 15px; /* Adjust padding for buttons on smaller screens */
+      font-size: 1rem; /* Adjust font size */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .register-container {
+      padding: 30px 20px; /* Further adjust padding for smaller screens */
+      margin: 20vh auto; /* Further adjust vertical margin */
+    }
+  
+    h2 {
+      font-size: 1.8rem; /* Further adjust header font size */
+    }
+  
+    .btn-primary {
+      padding: 12px; /* Further adjust padding for buttons on smaller screens */
+      font-size: 0.9rem; /* Further adjust font size */
+    }
+  }

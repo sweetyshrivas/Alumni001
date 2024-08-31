@@ -1,0 +1,86 @@
+.profile-page {
+    padding: 120px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .profile-container {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .profile-info {
+    text-align: center;
+  }
+  
+  .profile-details p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .edit-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .edit-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .edit-button,
+  .save-button,
+  .cancel-button,
+  .logout-button,
+  .upload-button,
+  .change-password-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .save-button {
+    background-color: #28a745;
+  }
+  
+  .cancel-button {
+    background-color: #dc3545;
+  }
+  
+  .logout-button {
+    background-color: #6c757d;
+  }
+  
+  .additional-settings {
+    margin-top: 30px;
+  }
+  
+  .activity-logs ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .activity-logs li {
+    background-color: #e9ecef;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+  }

@@ -1,0 +1,49 @@
+/* src/pages/NotFoundPage.css */
+
+/* Main container styling */
+.not-found-container {
+    position: relative; /* Position relative for floating effect */
+    max-width: 600px; /* Maximum width to ensure the container isn't too wide */
+    margin: 10vh auto; /* Center vertically and horizontally */
+    padding: 40px; /* Padding for spacious design */
+    background: linear-gradient(
+        to bottom right,
+        rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 0.7)
+      ); /* Subtle gradient for a modern glass effect */
+    backdrop-filter: blur(10px); /* Blur for the floating glass look */
+    border-radius: 15px; /* Rounded corners for a soft, modern feel */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.05); /* Enhanced shadow for depth */
+    animation: float 3s ease-in-out infinite; /* Smooth floating animation */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+    overflow: hidden; /* Hide overflow for smooth rounded edges */
+  }
+  
+  /* Floating animation */
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  /* Header styling */
+  .not-found-container h1 {
+    font-size: 6rem; /* Large font size for emphasis */
+    font-weight: bold;
+    color: #e74c3c; /* Distinct color for better visibility */
+    text-align: center; /* Centered text */
+    margin-bottom: 20px; /* Space below header */
+  }
+  
+  /* Paragraph styling */
+  .not-found-container p {
+    font-size: 1.5rem; /* Slightly larger font size for readability */
+    color: #7f8c8d; /* Light gray color for the text */
+    text-align: center; /* Centered text */
+  }

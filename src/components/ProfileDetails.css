@@ -1,0 +1,150 @@
+/* src/components/ProfileDetails.css */
+.profile-details {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.profile-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.profile-info h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.profile-info p {
+  margin: 5px 0;
+  color: #777;
+}
+
+.profile-actions {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-profile-btn,
+.message-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.edit-profile-btn:hover,
+.message-btn:hover {
+  background-color: #0056b3;
+}
+
+.profile-social-links {
+  padding: 10px 20px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.profile-social-links a {
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.profile-social-links a:hover {
+  color: #007bff;
+}
+
+.profile-tabs {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background-color: #f8f9fa;
+}
+
+.profile-tabs button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  padding: 10px;
+  cursor: pointer;
+  color: #007bff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.profile-tabs button.active,
+.profile-tabs button:hover {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.profile-content {
+  padding: 20px;
+}
+
+.profile-about,
+.profile-posts,
+.profile-friends {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.profile-about h3,
+.profile-posts h3,
+.profile-friends h3 {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.post-card {
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.profile-friends ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-friends ul li {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+
+
+
+  

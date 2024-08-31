@@ -1,0 +1,229 @@
+/* src/components/HomePage.css */
+
+/* Reset some basic elements */
+body, h1, h2, p, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  /* Main container styling */
+  
+  
+  /* Header styling */
+  .homepage-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px); /* Glass effect */
+    animation: float 2.5s ease-in-out infinite; /* Floating animation */
+  }
+  .homepage {
+    display: flex;
+    gap: 110px;
+   flex-direction: column;
+    align-items: center;
+    padding: 80px;
+    background: linear-gradient(to bottom right, #f0f0f5, #d9e4f5);
+    min-height: 100vh;
+  }
+  
+  /* Floating animation */
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  .homepage-header h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .homepage-header p {
+    font-size: 1.2em;
+    color: #34495e;
+  }
+  
+  /* Navigation styling */
+  .homepage-nav {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Glass effect */
+  }
+  
+  .homepage-nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  }
+  
+  .homepage-nav li {
+    font-size: 1em;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #2c3e50;
+    border-radius: 10px;
+  }
+  
+  .homepage-nav li:hover,
+  .homepage-nav li.active {
+    background-color: #2c3e50;
+    color: #ffffff;
+    transform: translateY(-3px);
+  }
+  
+  /* Main content styling */
+  .homepage-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .section-content {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(10px); /* Glass effect */
+  }
+  
+  .section-content h2 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .section-content p {
+    font-size: 1em;
+    color: #34495e;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .section-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Button styling */
+  .cta-button {
+    padding: 12px 24px;
+    font-size: 1em;
+    color: #ffffff;
+    background: linear-gradient(to right, #1a73e8, #4a90e2);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase; /* Uppercase text for emphasis */
+  }
+  
+  .cta-button:hover {
+    background: linear-gradient(to right, #155ab5, #2b80d3);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Footer styling */
+  .homepage-footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    width: 100%;
+    background: rgba(44, 62, 80, 0.9);
+    color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Glass effect */
+  }
+  
+  .homepage-footer p {
+    margin: 5px 0;
+  }
+  
+  .homepage-footer a {
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .homepage-footer a:hover {
+    color: #2980b9;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .homepage-header {
+      padding: 15px;
+    }
+    
+    .homepage-header h1 {
+      font-size: 2em;
+    }
+  
+    .homepage-nav {
+      padding: 10px;
+    }
+    
+    .homepage-nav li {
+      font-size: 0.9em;
+      padding: 8px 15px;
+    }
+  
+    .cta-button {
+      padding: 10px 20px;
+      font-size: 0.9em;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .homepage-header {
+      padding: 10px;
+    }
+  
+    .homepage-header h1 {
+      font-size: 1.8em;
+    }
+  
+    .homepage-nav {
+      padding: 8px;
+    }
+    
+    .homepage-nav li {
+      font-size: 0.8em;
+      padding: 6px 10px;
+    }
+  
+    .cta-button {
+      padding: 8px 15px;
+      font-size: 0.8em;
+    }
+  }

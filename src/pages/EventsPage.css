@@ -1,0 +1,23 @@
+/* src/pages/EventsPage.css */
+
+.events-container {
+  max-width: 800px;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-item {
+  cursor: pointer;
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.event-item:hover {
+  background-color: #f8f9fa;
+}
